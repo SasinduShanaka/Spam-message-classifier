@@ -50,8 +50,8 @@ print("Confusion matrix:")
 print(confusion_matrix(y_test, y_pred))
 
 # save artifacts
-os.makedirs("models", exist_ok=True)
-joblib.dump(model, "models/model.joblib")
-joblib.dump(vectorizer, "models/vectorizer.joblib")
-print("Saved model -> models/model.joblib")
-print("Saved vectorizer -> models/vectorizer.joblib")
+os.makedirs("model", exist_ok=True)
+joblib.dump(model, "model/model.joblib")
+joblib.dump(vectorizer, "model/vectorizer.joblib")
+print("Saved model -> model/model.joblib")
+print("Saved vectorizer -> model/vectorizer.joblib")
